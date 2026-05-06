@@ -1,0 +1,87 @@
+{
+  "app": {
+    "name": "SUITE",
+    "tagline": "Boîte à outils tout-en-un pour entreprise"
+  },
+  "nav": {
+    "dashboard": "Tableau de bord",
+    "invoicing": "Facturation",
+    "inventory": "Inventaire",
+    "cheque": "Impression de chèques",
+    "effet": "Impression d'effets bancaires",
+    "pos": "Caisse POS",
+    "settings": "Paramètres",
+    "logout": "Déconnexion"
+  },
+  "auth": {
+    "login": "Connexion",
+    "register": "Créer un compte",
+    "email": "E-mail",
+    "password": "Mot de passe",
+    "submit": "Continuer",
+    "no_account": "Pas encore de compte ?",
+    "have_account": "Déjà un compte ?",
+    "loading": "Veuillez patienter…",
+    "error_generic": "Échec de l'authentification. Vérifiez vos identifiants."
+  },
+  "dashboard": {
+    "title": "Tableau de bord",
+    "welcome": "Bon retour",
+    "modules": "Modules",
+    "storage": "Stockage",
+    "subscription": "Abonnement",
+    "used": "Utilisé",
+    "limit": "Limite",
+    "status": "Statut"
+  },
+  "modules": {
+    "invoicing": {
+      "title": "Facturation",
+      "desc": "Créez et envoyez des factures, devis et avoirs professionnels."
+    },
+    "inventory": {
+      "title": "Inventaire",
+      "desc": "Suivez les produits, les stocks et les catégories.",
+      "products": "Produits",
+      "categories": "Catégories",
+      "name": "Nom",
+      "price": "Prix",
+      "stock": "Stock",
+      "category": "Catégorie",
+      "actions": "Actions",
+      "no_products": "Aucun produit pour le moment.",
+      "loading": "Chargement des produits…",
+      "error": "Échec du chargement des produits."
+    },
+    "cheque": {
+      "title": "Impression de chèques",
+      "desc": "Concevez et imprimez des chèques bancaires avec des modèles personnalisés."
+    },
+    "effet": {
+      "title": "Impression d'effets bancaires",
+      "desc": "Imprimez des effets bancaires (lettres de change / traites)."
+    },
+    "pos": {
+      "title": "Caisse POS",
+      "desc": "Exploitez un terminal point de vente avec tickets et rapport Z quotidien."
+    },
+    "coming_soon": "Ce module arrive bientôt — nous le construirons ensemble."
+  },
+  "settings": {
+    "title": "Paramètres",
+    "language": "Langue",
+    "api": "Connexion API",
+    "base_url": "URL de base de l'API",
+    "api_key_status": "Clé API configurée",
+    "yes": "Oui",
+    "no": "Non"
+  },
+  "common": {
+    "search": "Rechercher",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "refresh": "Actualiser"
+  }
+}

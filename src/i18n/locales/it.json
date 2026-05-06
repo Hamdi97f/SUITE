@@ -1,0 +1,87 @@
+{
+  "app": {
+    "name": "SUITE",
+    "tagline": "Suite di strumenti aziendali tutto in uno"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "invoicing": "Fatturazione",
+    "inventory": "Inventario",
+    "cheque": "Stampa assegni",
+    "effet": "Stampa cambiali",
+    "pos": "Cassa POS",
+    "settings": "Impostazioni",
+    "logout": "Esci"
+  },
+  "auth": {
+    "login": "Accedi",
+    "register": "Crea account",
+    "email": "E-mail",
+    "password": "Password",
+    "submit": "Continua",
+    "no_account": "Non hai un account?",
+    "have_account": "Hai già un account?",
+    "loading": "Attendere prego…",
+    "error_generic": "Autenticazione fallita. Controlla le credenziali."
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Bentornato",
+    "modules": "Moduli",
+    "storage": "Archiviazione",
+    "subscription": "Abbonamento",
+    "used": "Usato",
+    "limit": "Limite",
+    "status": "Stato"
+  },
+  "modules": {
+    "invoicing": {
+      "title": "Fatturazione",
+      "desc": "Crea e invia fatture, preventivi e note di credito professionali."
+    },
+    "inventory": {
+      "title": "Inventario",
+      "desc": "Gestisci prodotti, livelli di stock e categorie.",
+      "products": "Prodotti",
+      "categories": "Categorie",
+      "name": "Nome",
+      "price": "Prezzo",
+      "stock": "Stock",
+      "category": "Categoria",
+      "actions": "Azioni",
+      "no_products": "Nessun prodotto.",
+      "loading": "Caricamento prodotti…",
+      "error": "Caricamento prodotti non riuscito."
+    },
+    "cheque": {
+      "title": "Stampa assegni",
+      "desc": "Progetta e stampa assegni bancari con modelli personalizzati."
+    },
+    "effet": {
+      "title": "Stampa cambiali",
+      "desc": "Stampa cambiali e tratte."
+    },
+    "pos": {
+      "title": "Cassa POS",
+      "desc": "Gestisci un terminale POS con scontrini e report Z giornaliero."
+    },
+    "coming_soon": "Questo modulo arriverà presto — lo costruiremo insieme."
+  },
+  "settings": {
+    "title": "Impostazioni",
+    "language": "Lingua",
+    "api": "Connessione API",
+    "base_url": "URL base API",
+    "api_key_status": "Chiave API configurata",
+    "yes": "Sì",
+    "no": "No"
+  },
+  "common": {
+    "search": "Cerca",
+    "cancel": "Annulla",
+    "save": "Salva",
+    "delete": "Elimina",
+    "edit": "Modifica",
+    "refresh": "Aggiorna"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "app": {
+    "name": "SUITE",
+    "tagline": "一体化商业工具套件"
+  },
+  "nav": {
+    "dashboard": "仪表盘",
+    "invoicing": "开票",
+    "inventory": "库存",
+    "cheque": "支票打印",
+    "effet": "汇票打印",
+    "pos": "POS 收银",
+    "settings": "设置",
+    "logout": "退出登录"
+  },
+  "auth": {
+    "login": "登录",
+    "register": "创建账号",
+    "email": "邮箱",
+    "password": "密码",
+    "submit": "继续",
+    "no_account": "还没有账号？",
+    "have_account": "已有账号？",
+    "loading": "请稍候…",
+    "error_generic": "认证失败，请检查您的凭据。"
+  },
+  "dashboard": {
+    "title": "仪表盘",
+    "welcome": "欢迎回来",
+    "modules": "模块",
+    "storage": "存储",
+    "subscription": "订阅",
+    "used": "已用",
+    "limit": "上限",
+    "status": "状态"
+  },
+  "modules": {
+    "invoicing": {
+      "title": "开票",
+      "desc": "创建并发送专业发票、报价单和贷记单。"
+    },
+    "inventory": {
+      "title": "库存",
+      "desc": "跟踪产品、库存数量和分类。",
+      "products": "产品",
+      "categories": "分类",
+      "name": "名称",
+      "price": "价格",
+      "stock": "库存",
+      "category": "分类",
+      "actions": "操作",
+      "no_products": "暂无产品。",
+      "loading": "正在加载产品…",
+      "error": "加载产品失败。"
+    },
+    "cheque": {
+      "title": "支票打印",
+      "desc": "使用自定义模板设计并打印银行支票。"
+    },
+    "effet": {
+      "title": "汇票打印",
+      "desc": "打印汇票/票据。"
+    },
+    "pos": {
+      "title": "POS 收银",
+      "desc": "运行带小票和日 Z 报表的 POS 终端。"
+    },
+    "coming_soon": "此模块即将推出 — 我们一起构建。"
+  },
+  "settings": {
+    "title": "设置",
+    "language": "语言",
+    "api": "API 连接",
+    "base_url": "API 基础地址",
+    "api_key_status": "API 密钥已配置",
+    "yes": "是",
+    "no": "否"
+  },
+  "common": {
+    "search": "搜索",
+    "cancel": "取消",
+    "save": "保存",
+    "delete": "删除",
+    "edit": "编辑",
+    "refresh": "刷新"
+  }
+}
