@@ -119,6 +119,12 @@ export function Dashboard() {
           </Link>
         ))}
       </div>
+
+      <div className="mt-8 flex justify-end">
+        <span className="text-xs text-slate-400">
+          Powered by <span className="font-semibold text-slate-500">Solvia</span>
+        </span>
+      </div>
     </>
   );
 }
