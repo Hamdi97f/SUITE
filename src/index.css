@@ -74,4 +74,53 @@ body {
   .table-base tbody tr {
     @apply border-t border-slate-100 hover:bg-slate-50;
   }
+
+  /* Printable surfaces — sized for the most common paper formats. */
+  .print-page {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 18mm;
+    box-sizing: border-box;
+  }
+  .print-receipt {
+    width: 80mm;
+    box-sizing: border-box;
+  }
+  .print-cheque,
+  .print-effet {
+    width: 210mm;
+    box-sizing: border-box;
+  }
+}
+
+/* When printing, hide the app chrome (sidebar, header) and let the printable
+ * surface fill the page. The .print-* surfaces above keep their print sizes. */
+@media print {
+  body {
+    background: #fff;
+  }
+  aside,
+  header {
+    display: none !important;
+  }
+  main {
+    padding: 0 !important;
+    background: #fff !important;
+    overflow: visible !important;
+  }
+  .card,
+  .shadow,
+  .shadow-sm,
+  .shadow-md {
+    box-shadow: none !important;
+  }
+  .print-page,
+  .print-cheque,
+  .print-effet {
+    margin: 0 auto;
+    box-shadow: none;
+  }
+  @page {
+    margin: 0;
+  }
 }

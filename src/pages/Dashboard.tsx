@@ -11,6 +11,7 @@ const MODULES: { to: string; titleKey: string; descKey: string; icon: string; co
   { to: '/cheque', titleKey: 'modules.cheque.title', descKey: 'modules.cheque.desc', icon: '🧮', color: 'bg-amber-50 text-amber-700' },
   { to: '/effet', titleKey: 'modules.effet.title', descKey: 'modules.effet.desc', icon: '🏦', color: 'bg-purple-50 text-purple-700' },
   { to: '/pos', titleKey: 'modules.pos.title', descKey: 'modules.pos.desc', icon: '💳', color: 'bg-rose-50 text-rose-700' },
+  { to: '/files', titleKey: 'modules.files.title', descKey: 'modules.files.desc', icon: '📁', color: 'bg-sky-50 text-sky-700' },
 ];
 
 function formatBytes(bytes: number): string {
