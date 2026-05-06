@@ -1,0 +1,87 @@
+{
+  "app": {
+    "name": "SUITE",
+    "tagline": "All-in-one business toolkit"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "invoicing": "Invoicing",
+    "inventory": "Inventory",
+    "cheque": "Cheque Print",
+    "effet": "Bank Effect Print",
+    "pos": "POS Cash Register",
+    "settings": "Settings",
+    "logout": "Log out"
+  },
+  "auth": {
+    "login": "Log in",
+    "register": "Create account",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Continue",
+    "no_account": "Don't have an account?",
+    "have_account": "Already have an account?",
+    "loading": "Please wait…",
+    "error_generic": "Authentication failed. Please check your credentials."
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome back",
+    "modules": "Modules",
+    "storage": "Storage",
+    "subscription": "Subscription",
+    "used": "Used",
+    "limit": "Limit",
+    "status": "Status"
+  },
+  "modules": {
+    "invoicing": {
+      "title": "Invoicing",
+      "desc": "Create and send professional invoices, quotes and credit notes."
+    },
+    "inventory": {
+      "title": "Inventory",
+      "desc": "Track products, stock levels and categories.",
+      "products": "Products",
+      "categories": "Categories",
+      "name": "Name",
+      "price": "Price",
+      "stock": "Stock",
+      "category": "Category",
+      "actions": "Actions",
+      "no_products": "No products yet.",
+      "loading": "Loading products…",
+      "error": "Failed to load products."
+    },
+    "cheque": {
+      "title": "Cheque Print",
+      "desc": "Design and print bank cheques with custom templates."
+    },
+    "effet": {
+      "title": "Bank Effect Print",
+      "desc": "Print bank effects (lettres de change / traites)."
+    },
+    "pos": {
+      "title": "POS Cash Register",
+      "desc": "Run a point-of-sale terminal with receipts and daily Z-report."
+    },
+    "coming_soon": "This module is coming soon — we'll build it together."
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "api": "API connection",
+    "base_url": "API base URL",
+    "api_key_status": "API key configured",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "common": {
+    "search": "Search",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "refresh": "Refresh"
+  }
+}

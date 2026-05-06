@@ -1,0 +1,87 @@
+{
+  "app": {
+    "name": "SUITE",
+    "tagline": "Conjunto de herramientas empresariales todo en uno"
+  },
+  "nav": {
+    "dashboard": "Panel",
+    "invoicing": "Facturación",
+    "inventory": "Inventario",
+    "cheque": "Impresión de cheques",
+    "effet": "Impresión de letras de cambio",
+    "pos": "Caja POS",
+    "settings": "Ajustes",
+    "logout": "Cerrar sesión"
+  },
+  "auth": {
+    "login": "Iniciar sesión",
+    "register": "Crear cuenta",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "submit": "Continuar",
+    "no_account": "¿No tienes cuenta?",
+    "have_account": "¿Ya tienes cuenta?",
+    "loading": "Por favor espera…",
+    "error_generic": "Error de autenticación. Verifica tus credenciales."
+  },
+  "dashboard": {
+    "title": "Panel",
+    "welcome": "Bienvenido de nuevo",
+    "modules": "Módulos",
+    "storage": "Almacenamiento",
+    "subscription": "Suscripción",
+    "used": "Usado",
+    "limit": "Límite",
+    "status": "Estado"
+  },
+  "modules": {
+    "invoicing": {
+      "title": "Facturación",
+      "desc": "Crea y envía facturas, presupuestos y notas de crédito profesionales."
+    },
+    "inventory": {
+      "title": "Inventario",
+      "desc": "Gestiona productos, niveles de stock y categorías.",
+      "products": "Productos",
+      "categories": "Categorías",
+      "name": "Nombre",
+      "price": "Precio",
+      "stock": "Stock",
+      "category": "Categoría",
+      "actions": "Acciones",
+      "no_products": "Aún no hay productos.",
+      "loading": "Cargando productos…",
+      "error": "Error al cargar productos."
+    },
+    "cheque": {
+      "title": "Impresión de cheques",
+      "desc": "Diseña e imprime cheques bancarios con plantillas personalizadas."
+    },
+    "effet": {
+      "title": "Impresión de letras de cambio",
+      "desc": "Imprime letras de cambio y pagarés."
+    },
+    "pos": {
+      "title": "Caja POS",
+      "desc": "Opera un terminal de punto de venta con tickets e informe Z."
+    },
+    "coming_soon": "Este módulo llegará pronto — lo construiremos juntos."
+  },
+  "settings": {
+    "title": "Ajustes",
+    "language": "Idioma",
+    "api": "Conexión API",
+    "base_url": "URL base de la API",
+    "api_key_status": "Clave API configurada",
+    "yes": "Sí",
+    "no": "No"
+  },
+  "common": {
+    "search": "Buscar",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "refresh": "Actualizar"
+  }
+}
