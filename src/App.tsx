@@ -4,8 +4,12 @@ import { ProtectedRoute } from './components/ProtectedRoute';
 import { AuthPage } from './pages/AuthPage';
 import { Dashboard } from './pages/Dashboard';
 import { Inventory } from './pages/Inventory';
+import { Invoicing } from './pages/Invoicing';
+import { Cheque } from './pages/Cheque';
+import { Effet } from './pages/Effet';
+import { POS } from './pages/POS';
+import { Files } from './pages/Files';
 import { Settings } from './pages/Settings';
-import { ComingSoon } from './pages/ComingSoon';
 
 export default function App() {
   return (
@@ -22,22 +26,11 @@ export default function App() {
       >
         <Route index element={<Dashboard />} />
         <Route path="inventory" element={<Inventory />} />
-        <Route
-          path="invoicing"
-          element={<ComingSoon titleKey="modules.invoicing.title" descKey="modules.invoicing.desc" />}
-        />
-        <Route
-          path="cheque"
-          element={<ComingSoon titleKey="modules.cheque.title" descKey="modules.cheque.desc" />}
-        />
-        <Route
-          path="effet"
-          element={<ComingSoon titleKey="modules.effet.title" descKey="modules.effet.desc" />}
-        />
-        <Route
-          path="pos"
-          element={<ComingSoon titleKey="modules.pos.title" descKey="modules.pos.desc" />}
-        />
+        <Route path="invoicing" element={<Invoicing />} />
+        <Route path="cheque" element={<Cheque />} />
+        <Route path="effet" element={<Effet />} />
+        <Route path="pos" element={<POS />} />
+        <Route path="files" element={<Files />} />
         <Route path="settings" element={<Settings />} />
       </Route>
 

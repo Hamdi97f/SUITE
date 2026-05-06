@@ -209,6 +209,65 @@ export const orders = {
     request<Order>(`/orders/${id}`, { method: 'PUT', token, body }),
 };
 
+/* -------------------------------------------------------------------------- */
+/*                                   Files                                     */
+/* -------------------------------------------------------------------------- */
+
+export interface CloudFile {
+  id: string;
+  file_name: string;
+  file_size: number;
+  mime_type?: string;
+  created_at?: string;
+}
+
+export interface SignedFile extends CloudFile {
+  signed_url: string;
+  expires_in: number;
+}
+
+export const files = {
+  list: (token: string) => request<{ files: CloudFile[] }>('/list-files', { token }),
+  upload: (token: string, file: File, fileName?: string) => {
+    const fd = new FormData();
+    // The gateway accepts either the underlying File name or a renamed Blob;
+    // when fileName is provided we wrap the File so the server stores that name.
+    if (fileName && fileName !== file.name) {
+      fd.append('file', new File([file], fileName, { type: file.type }));
+    } else {
+      fd.append('file', file);
+    }
+    return request<{ file_id: string; file_name: string; file_size: number }>(
+      '/upload-file',
+      { method: 'POST', token, formData: fd },
+    );
+  },
+  /** Upload arbitrary text/JSON as a file under the given filename. */
+  uploadBlob: (token: string, fileName: string, content: string, mime = 'application/json') => {
+    const fd = new FormData();
+    fd.append('file', new File([content], fileName, { type: mime }));
+    return request<{ file_id: string; file_name: string; file_size: number }>(
+      '/upload-file',
+      { method: 'POST', token, formData: fd },
+    );
+  },
+  remove: (token: string, fileId: string) =>
+    request<{ success: boolean }>('/delete-file', {
+      method: 'DELETE',
+      token,
+      query: { file_id: fileId },
+    }),
+  signed: (token: string, fileId: string, expiresIn = 3600) =>
+    request<SignedFile>(`/files/${fileId}`, { token, query: { expires_in: expiresIn } }),
+  /** Fetches the file via its signed URL and returns the body as text. */
+  async fetchText(token: string, fileId: string): Promise<string> {
+    const meta = await files.signed(token, fileId);
+    const res = await fetch(meta.signed_url);
+    if (!res.ok) throw new ApiError(`Failed to download file ${fileId}`, res.status, null);
+    return res.text();
+  },
+};
+
 export const config = {
   get baseUrl() {
     return BASE_URL;

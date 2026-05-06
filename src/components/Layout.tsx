@@ -1,6 +1,8 @@
+import { useEffect } from 'react';
 import { NavLink, Outlet, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../store/auth';
+import { useCompany } from '../store/company';
 import { LanguageSwitcher } from './LanguageSwitcher';
 
 interface NavItem {
@@ -16,6 +18,7 @@ const NAV: NavItem[] = [
   { to: '/cheque', labelKey: 'nav.cheque', icon: '🧮' },
   { to: '/effet', labelKey: 'nav.effet', icon: '🏦' },
   { to: '/pos', labelKey: 'nav.pos', icon: '💳' },
+  { to: '/files', labelKey: 'nav.files', icon: '📁' },
   { to: '/settings', labelKey: 'nav.settings', icon: '⚙️' },
 ];
 
@@ -23,7 +26,13 @@ export function Layout() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const user = useAuth((s) => s.user);
+  const token = useAuth((s) => s.token);
   const logout = useAuth((s) => s.logout);
+  const loadCompany = useCompany((s) => s.load);
+
+  useEffect(() => {
+    if (token) void loadCompany(token);
+  }, [token, loadCompany]);
 
   const handleLogout = () => {
     logout();
